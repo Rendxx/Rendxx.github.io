@@ -15,6 +15,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="gulpfile.js" />
+    <Content Include="lib\DeviceOrientationControls.js" />
+    <Content Include="lib\EditorControls.js" />
+    <Content Include="lib\FirstPersonControls.js" />
+    <Content Include="lib\FlyControls.js" />
+    <Content Include="lib\jquery.js" />
+    <Content Include="lib\jquery.slim.js" />
+    <Content Include="lib\OculusControls.js" />
+    <Content Include="lib\OrbitControls.js" />
+    <Content Include="lib\PathControls.js" />
+    <Content Include="lib\PointerLockControls.js" />
+    <Content Include="lib\three.js" />
+    <Content Include="lib\three.min.js" />
+    <Content Include="lib\TrackballControls.js" />
+    <Content Include="lib\TransformControls.js" />
     <Content Include="Test\LightIssue\ceramic.png" />
     <Content Include="Test\LightIssue\jquery.js" />
     <Content Include="Test\LightIssue\OrbitControls.js" />
