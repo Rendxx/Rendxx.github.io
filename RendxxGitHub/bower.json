@@ -1,0 +1,31 @@
+{
+  "name": "RendxxGitHub",
+  "description": "",
+  "main": [
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "three.js": "^0.75.0",
+    "three.js-controls": "^0.0.67",
+    "stats.js": "*",
+    "dat-gui": "^0.5.1"
+  },
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+  ],
+  "authors": [
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!js/*",
+    "!css/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": false
+}
