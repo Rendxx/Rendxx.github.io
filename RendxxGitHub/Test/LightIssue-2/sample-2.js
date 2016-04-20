@@ -40,13 +40,13 @@
 
         /*scene lights*/
         spot = new THREE.SpotLight()
-        spot.castShadow = false;
+        spot.castShadow = true;
         spot.position.set(20, 35, 40);
         spot.target = plane;
         scene.add(spot);
 
         spot2 = new THREE.SpotLight(0x990099);
-        spot2.castShadow = true;
+        spot2.castShadow = false;
         spot2.position.set(-60, 35, -60);
         spot2.target = plane;
         scene.add(spot2);
