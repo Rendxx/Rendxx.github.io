@@ -18,10 +18,10 @@
     <Content Include="Test\LightIssue-2\jquery.js" />
     <Content Include="Test\LightIssue-2\OrbitControls.js" />
     <Content Include="Test\LightIssue-2\sample-2.js" />
-    <Content Include="Test\LightIssue-2\test-dev-2.html" />
-    <Content Include="Test\LightIssue-2\test-master-2.html" />
-    <Content Include="Test\LightIssue-2\three-dev.js" />
-    <Content Include="Test\LightIssue-2\three.js" />
+    <Content Include="Test\LightIssue-2\test-r76-2.html" />
+    <Content Include="Test\LightIssue-2\test-r75-2.html" />
+    <Content Include="Test\LightIssue-2\three-r75.js" />
+    <Content Include="Test\LightIssue-2\three-r76.js" />
     <Content Include="Test\LightIssue\ceramic.png" />
     <Content Include="Test\LightIssue\jquery.js" />
     <Content Include="Test\LightIssue\OrbitControls.js" />
