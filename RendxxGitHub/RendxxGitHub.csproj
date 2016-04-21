@@ -30,6 +30,12 @@
     <Content Include="Test\LightIssue\sample.js" />
     <Content Include="Test\LightIssue\three-dev.js" />
     <Content Include="Test\LightIssue\three.js" />
+    <Content Include="Test\WebGLTest\image1.png" />
+    <Content Include="Test\WebGLTest\image2.png" />
+    <Content Include="Test\WebGLTest\sample-warning.js" />
+    <Content Include="Test\WebGLTest\sample-warning.html" />
+    <Content Include="Test\WebGLTest\sample-ok.html" />
+    <Content Include="Test\WebGLTest\sample.js" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

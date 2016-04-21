@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WebGL - Warning</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            overflow: hidden;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script id="2d-vertex-shader" type="x-shader/x-vertex">
+        attribute vec2 a_position;
+        attribute vec2 a_texCoord;
+
+        uniform vec2 u_resolution;
+
+        varying vec2 v_texCoord;
+
+        void main() {
+        vec2 zeroToOne = a_position / u_resolution;
+        vec2 zeroToTwo = zeroToOne * 2.0;
+        vec2 clipSpace = zeroToTwo - 1.0;
+        gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);
+
+        v_texCoord = a_texCoord;
+        }
+    </script>
+
+    <script id="2d-fragment-shader" type="x-shader/x-fragment">
+        precision mediump float;
+        uniform sampler2D u_image0;
+        uniform sampler2D u_image1;
+
+        varying vec2 v_texCoord;
+
+        void main() {
+        vec4 color0 = texture2D(u_image0, v_texCoord);
+        vec4 color1 = texture2D(u_image1, v_texCoord);
+        gl_FragColor = color0 * color1;
+        }
+    </script>
+
+
+</head>
+<body>
+    <div id="webGL-container">
+        <canvas id="canvas1" style="border:1px solid #ddd;"></canvas>
+    </div>
+    <script type="text/javascript" src="sample-warning.js"></script>
+    <script>
+        loadImages([
+          "image1.png"
+          , "image2.png"
+        ], render);
+    </script>
+</body>
+</html>
